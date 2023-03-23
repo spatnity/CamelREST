@@ -47,7 +47,7 @@ public class RestJsonTest {
                 .body("{\"name\": \"Pear\", \"description\": \"Winter fruit\"}")
                 .header("Content-Type", "application/json")
                 .when()
-                .post("/fruits")
+                .post("/fruits/add")
                 .then()
                 .statusCode(200)
                 .body(
